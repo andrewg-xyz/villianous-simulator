@@ -1,0 +1,17 @@
+Villian,type,name,action
+princejohn,objective,,at start win if 20+ power
+princejohn,space,sherwood forest,gain 1 power
+princejohn,space,sherwood forest,discard
+princejohn,space,sherwood forest,play card
+princejohn,space,sherwood forest,fate
+princejohn,space,friar tucks church,gain 2 power
+princejohn,space,friar tucks church,play card
+princejohn,space,friar tucks church,play card
+princejohn,space,friar tucks church,move ally or item
+princejohn,space,nottingham,fate
+princejohn,space,nottingham,gain 1 power
+princejohn,space,nottingham,vanquish
+princejohn,space,nottingham,play card
+princejohn,space,the jail,gain 3 power
+princejohn,space,the jail,play card
+princejohn,space,the jail,discard
