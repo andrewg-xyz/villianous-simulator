@@ -24,5 +24,5 @@ func Execute() {
 
 
 func init() {
-	rootCmd.PersistentFlags().String("villian", "v", "Path to the villian data file")
+	rootCmd.PersistentFlags().StringP("villian", "v", "", "villian file path")
 }
