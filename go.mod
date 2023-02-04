@@ -1,4 +1,4 @@
-module github.com/andrewg-xyz/villanous-simulator
+module github.com/andrewg-xyz/villianous-simulator
 
 go 1.20
 
