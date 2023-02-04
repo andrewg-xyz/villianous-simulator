@@ -36,7 +36,9 @@ func updateStateWithEntry(state State, dataEntry GameboardEntry) State {
 		location := villian.Location[dataEntry.Name]
 		location.Actions = append(location.Actions, Action{Name: dataEntry.Action})
 		villian.Location[dataEntry.Name] = location
-	}
+	} else if dataEntry.Type == "objective" {
+		villian.Objective = dataEntry.Action
+	} 
 	state.Villians[dataEntry.Villian] = villian
 	return state
 }
