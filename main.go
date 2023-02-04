@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/andrewg-xyz/villanous-simulator/src/cmd"
+	"github.com/andrewg-xyz/villianous-simulator/src/cmd"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/andrewg-xyz/villanous-simulator/src/internal"
+	"github.com/andrewg-xyz/villianous-simulator/src/internal"
 	"github.com/spf13/cobra"
 )
 
