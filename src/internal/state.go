@@ -8,6 +8,9 @@ type Villian struct {
 	Objective string
 	Location  map[string]Location
 	Power int
+	Hand []Card
+	Deck []Card
+	FateDeck []Card
 }
 
 type Location struct {

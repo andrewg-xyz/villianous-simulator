@@ -12,7 +12,8 @@ var rootCmd = &cobra.Command{
 	Short: "villianous is a CLI tool for running villianous simulations",
 	Run: func(cmd *cobra.Command, args []string) {
 		data, _ := cmd.Flags().GetString("villian")
-		state := internal.CreateGame(data)
+		cards, _ := cmd.Flags().GetString("cards")
+		state := internal.CreateGame(data, cards)
 		fmt.Println("state: ", state)
 	},
 }
@@ -25,4 +26,5 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().StringP("villian", "v", "", "villian file path")
+	rootCmd.PersistentFlags().StringP("cards", "c", "", "villian file path")
 }

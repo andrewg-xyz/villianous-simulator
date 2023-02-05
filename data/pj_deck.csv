@@ -1,0 +1,46 @@
+Villian,Type,Name,Cost,Power,Function,Ability
+princejohn,villian card,Rhino Guards,3,4,Ally,
+princejohn,villian card,sir hiss,2,2,Ally,If <Villian> is at <ally> <location> perform one action that is covered by a hero at that <location>
+princejohn,villian card,Set a trap,1,,Effect,move an <ally> to any <location> perform a vanquich <action>
+princejohn,villian card,Set a trap,1,,Effect,move an <ally> to any <location> perform a vanquich <action>
+princejohn,villian card,bow and arrows,1,1,Item,"attach to an <ally>, if <ally> is discarded, discard <item> instead"
+princejohn,villian card,Greed,,,Condition,"if another <villian> has >6 power, gain 3 power"
+princejohn,villian card,Trigger,2,4,Ally,<ally> at <location> get -1 power
+princejohn,villian card,Beautiful lovely taxes,0,,Effect,gain 1 power for each <hero> in realm
+princejohn,villian card,Greed,,,Condition,"if another <villian> has >6 power, gain 3 power"
+princejohn,villian card,nutsy,2,2,ally,<ally> at <location> get 1 power
+princejohn,villian card,Beautiful lovely taxes,0,,Effect,gain 1 power for each <hero> in realm
+princejohn,villian card,wolf archers,2,2,ally,"when vanquish action, archers may defeat a this or adjacent <location>"
+princejohn,villian card,cowardice,,,Condition,if another <villian> has>3 <ally> play an <ally> for free
+princejohn,villian card,wolf archers,2,2,ally,"when vanquish action, archers may defeat a this or adjacent <location>"
+princejohn,villian card,bow and arrows,1,1,Item,"attach to an <ally>, if <ally> is discarded, discard <item> instead"
+princejohn,villian card,imprison,2,,Effect,move a hero to the jail 
+princejohn,villian card,Rhino Guards,3,4,Ally,
+princejohn,villian card,Rhino Guards,3,4,Ally,
+princejohn,villian card,cowardice,,,Condition,if another <villian> has>3 <ally> play an <ally> for free
+princejohn,villian card,sheriff of nottingham,3,3,ally,"before move, you may move sharriff to any location and gain 1 power if there are heroes at his new location"
+princejohn,villian card,warrant,1,,item,gain 2 power each time a hero is played to this location
+princejohn,villian card,imprison,2,,effect,move a hero to the jail 
+princejohn,villian card,golden arrow,0,,item,when golden arrow is played attache to an ally when that ally defeats a hero gain 2 power
+princejohn,villian card,imprison,2,,effect,move a hero to the jail 
+princejohn,villian card,king richards crown,1,,item,"if prince john is at this lcoation, costs are reduced by 1 power"
+princejohn,villian card,warrant,1,,item,gain 2 power each time a hero is played to this location
+princejohn,villian card,intimidation,2,,effect,"perform a vanquish action, but do not discard the allies"
+princejohn,villian card,Beautiful lovely taxes,0,,Effect,gain 1 power for each <hero> in realm
+princejohn,villian card,wolf archers,2,2,ally,"when vanquish action, archers may defeat a this or adjacent <location>"
+princejohn,villian card,warrant,1,,item,gain 2 power each time a hero is played to this location
+princejohn,fate card,king richard,,5,hero,<villian> cannot play effects
+princejohn,fate card,clever disguise,,,item,"hero cannot be defeated, pay 2 power to discard"
+princejohn,fate card,maid marian,,3,hero,"when <hero> is defeated, play robin hood to location"
+princejohn,fate card,little john,,5,hero,"may take 4 power from <villian> and put on <hero>, power returns upon defeat"
+princejohn,fate card,toby,,2,hero,when defeated shuffle back into fate deck
+princejohn,fate card,steal from the rich,,,effect,"take 4 power and put on one hero, power returns upon defeat"
+princejohn,fate card,robin hood,,5,hero,<villian> gains -1 power for card or actions
+princejohn,fate card,steal from the rich,,,effect,"take 4 power and put on one hero, power returns upon defeat"
+princejohn,fate card,clever disguise,,,item,"hero cannot be defeated, pay 2 power to discard"
+princejohn,fate card,friar tuck,,3,hero,"discard all warrants from location, power is lost"
+princejohn,fate card,steal from the rich,,,effect,"take 4 power and put on one hero, power returns upon defeat"
+princejohn,fate card,alan a dale,,2,hero,heroes +1 strength
+princejohn,fate card,clever disguise,,,item,"hero cannot be defeated, pay 2 power to discard"
+princejohn,fate card,skippy,,2,hero,wolf archers cannot be used to defeat skippy
+princejohn,fate card,lady kluck,,6,hero,cannot be played or moved to the jail
