@@ -92,28 +92,6 @@ func convertCards(records [][]string) []Card {
 	return cards
 }
 
-type GameboardEntry struct {
-	Villian string
-	Type    string
-	Name    string
-	Action  string
-}
-
-type Card struct {
-	Villian  string
-	Type     string
-	Name     string
-	Cost     int
-	Power    int
-	Function string
-	Ability  string
-}
-
-const (
-	// Villian Names
-	PrinceJohn = "princejohn"
-)
-
 func readData(fileName string) ([][]string, error) {
 	f, err := os.Open(fileName)
 	if err != nil {
