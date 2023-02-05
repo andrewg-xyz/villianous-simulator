@@ -18,6 +18,26 @@ func CreateGame(villianFilePath string, cardsFilePath string) State {
 	state = constructRealm(state, gameData)
 	state = contructDecks(state, cardsData)
 
+	state = shuffleDecks(state)
+	state = dealHands(state)
+
+	return state
+}
+
+func dealHands(state State) State {
+	for name, villian := range state.Villians {
+		villian.Hand = villian.Deck[0:4]
+		villian.Deck = villian.Deck[4:]
+		state.Villians[name] = villian
+	}
+	return state
+}
+
+func shuffleDecks(state State) State {
+	for _, villian := range state.Villians {
+		villian.Deck = ShuffleNTimes(villian.Deck,7)
+		villian.FateDeck = ShuffleNTimes(villian.FateDeck,7)
+	}
 	return state
 }
 
