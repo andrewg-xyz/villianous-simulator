@@ -1,10 +1,11 @@
 package internal
 
 import (
-	"fmt"
 	"math/rand"
 	"regexp"
 	"strconv"
+
+	"github.com/rs/zerolog/log"
 )
 
 const (
@@ -15,6 +16,7 @@ var gainPowerRegex = regexp.MustCompile(gainPowerPattern)
 
 // actionionator
 func TakeAction(state State, action Action) State {
+	log.Debug().Msgf("Taking action: %s", action.Name)
 
 	switch action.Name {
 	case gainPowerRegex.FindString(action.Name):
@@ -26,7 +28,7 @@ func TakeAction(state State, action Action) State {
 		villian.Power = power
 		state.Villians["princejohn"] = villian
 	default:
-		fmt.Println("Unhandled: " + action.Name)
+		log.Info().Msgf("Action not found: %s", action.Name)
 	}
 	return state
 }

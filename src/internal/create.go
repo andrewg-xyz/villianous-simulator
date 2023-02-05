@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+
+	"github.com/rs/zerolog/log"
 )
 
 func CreateGame(villianFilePath string, cardsFilePath string) State {
@@ -35,8 +37,8 @@ func dealHands(state State) State {
 
 func shuffleDecks(state State) State {
 	for _, villian := range state.Villians {
-		villian.Deck = ShuffleNTimes(villian.Deck,7)
-		villian.FateDeck = ShuffleNTimes(villian.FateDeck,7)
+		villian.Deck = ShuffleNTimes(villian.Deck, 7)
+		villian.FateDeck = ShuffleNTimes(villian.FateDeck, 7)
 	}
 	return state
 }
@@ -115,7 +117,7 @@ func convertCards(records [][]string) []Card {
 func readData(fileName string) ([][]string, error) {
 	f, err := os.Open(fileName)
 	if err != nil {
-		fmt.Println(err)
+		log.Error().Msg(fmt.Sprintf("Error opening file: %s", err))
 		return [][]string{}, err
 	}
 	defer f.Close()
