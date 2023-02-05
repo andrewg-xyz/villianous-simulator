@@ -14,7 +14,7 @@ var rootCmd = &cobra.Command{
 		data, _ := cmd.Flags().GetString("villian")
 		cards, _ := cmd.Flags().GetString("cards")
 		state := internal.CreateGame(data, cards)
-		fmt.Println("state: ", state)
+		fmt.Println(string(state.JSON()))
 	},
 }
 

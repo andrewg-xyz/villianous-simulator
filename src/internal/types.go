@@ -15,20 +15,20 @@ const (
 )
 
 type Villian struct {
-	Objective string
-	Location  map[string]Location
-	Power     int
-	Hand      []Card
-	Deck      []Card
-	FateDeck  []Card
+	Objective string              `json:"objective"`
+	Location  map[string]Location `json:"location"`
+	Power     int                 `json:"power"`
+	Hand      []Card              `json:"hand"`
+	Deck      []Card              `json:"deck"`
+	FateDeck  []Card              `json:"fateDeck"`
 }
 
 type Location struct {
-	Actions []Action
+	Actions []Action `json:"actions"`
 }
 
 type Action struct {
-	Name string
+	Name string `json:"name"`
 }
 
 type GameboardEntry struct {
@@ -39,11 +39,11 @@ type GameboardEntry struct {
 }
 
 type Card struct {
-	Villian  string
-	Type     string
-	Name     string
-	Cost     int
-	Power    int
-	Function string
-	Ability  string
+	Villian  string `json:"villian"`
+	Type     string `json:"type"`
+	Name     string `json:"name"`
+	Cost     int    `json:"cost"`
+	Power    int    `json:"power"`
+	Function string `json:"function"`
+	Ability  string `json:"ability"`
 }
